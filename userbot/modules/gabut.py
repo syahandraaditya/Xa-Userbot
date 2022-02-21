@@ -21,17 +21,17 @@ async def typewriter(typew):
 # Menjawab Salam
 
 
-@Xa_cmd(pattern="rexa(?: |$)(.*)")
+@Xa_cmd(pattern="biicantik(?: |$)(.*)")
 async def perkenalan(event):
     event.pattern_match.group(1)
-    await event.edit("`REXA BAIK KAN?`")
+    await event.edit("`BII CANTIK KAN?`")
 # Istigfar
 
 
 @Xa_cmd(pattern="perkenalan(?: |$)(.*)")
 async def perkenalan(event):
     event.pattern_match.group(1)
-    await event.edit(f"`Hai Guys , Perkenalkan Nama Gw {DEFAULTUSER}`")
+    await event.edit(f"`Hai Guys , Perkenalkan Nama ku {DEFAULTUSER}`")
     sleep(2)
     await event.edit(f"`Gw Tinggal Di {WEATHER_DEFCITY}`")
     sleep(2)
@@ -42,7 +42,7 @@ async def perkenalan(event):
 
 
 CMD_HELP.update({
-    "gabut": f"**Modules** - `Gabut`\
+    "gabut": f"**Modules** - `gabut`\
     \n\n Cmd : `{cmd}l`\
     \nUsage : Untuk Menjawab Salam\
     \n\n Cmd : `{cmd}perkenalan`\
