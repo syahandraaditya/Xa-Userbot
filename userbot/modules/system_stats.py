@@ -38,16 +38,16 @@ async def get_readable_time(seconds: int) -> str:
 
     while count < 4:
         count += 1
-        remainder, result= divmod(
+        remainder, result = divmod(
             seconds, 60) if count < 3 else divmod(
             seconds, 24)
         if seconds == 0 and remainder == 0:
             break
         time_list.append(int(result))
-        seconds= int(remainder)
+        seconds = int(remainder)
 
     for x in range(len(time_list)):
-        time_list[x]= str(time_list[x]) + time_suffix_list[x]
+        time_list[x] = str(time_list[x]) + time_suffix_list[x]
 
     if len(time_list) == 4:
         up_time += time_list.pop() + ", "
@@ -60,24 +60,24 @@ async def get_readable_time(seconds: int) -> str:
 
 @ Xa_cmd(pattern="spc")
 async def psu(event):
-    uname= platform.uname()
-    softw= "**Informasi Sistem**\n"
+    uname = platform.uname()
+    softw = "**Informasi Sistem**\n"
     softw += f"`Sistem   : {uname.system}`\n"
     softw += f"`Rilis    : {uname.release}`\n"
     softw += f"`Versi    : {uname.version}`\n"
     softw += f"`Mesin    : {uname.machine}`\n"
     # Boot Time
-    boot_time_timestamp= psutil.boot_time()
-    bt= datetime.fromtimestamp(boot_time_timestamp)
+    boot_time_timestamp = psutil.boot_time()
+    bt = datetime.fromtimestamp(boot_time_timestamp)
     softw += f"`Waktu Hidup: {bt.day}/{bt.month}/{bt.year}  {bt.hour}:{bt.minute}:{bt.second}`\n"
     # CPU Cores
-    cpuu= "**Informasi CPU**\n"
+    cpuu = "**Informasi CPU**\n"
     cpuu += "`Physical cores   : " + \
         str(psutil.cpu_count(logical=False)) + "`\n"
     cpuu += "`Total cores      : " + \
         str(psutil.cpu_count(logical=True)) + "`\n"
     # CPU frequencies
-    cpufreq= psutil.cpu_freq()
+    cpufreq = psutil.cpu_freq()
     cpuu += f"`Max Frequency    : {cpufreq.max:.2f}Mhz`\n"
     cpuu += f"`Min Frequency    : {cpufreq.min:.2f}Mhz`\n"
     cpuu += f"`Current Frequency: {cpufreq.current:.2f}Mhz`\n\n"
@@ -88,17 +88,17 @@ async def psu(event):
     cpuu += "**Total CPU Usage**\n"
     cpuu += f"`Semua Core: {psutil.cpu_percent()}%`\n"
     # RAM Usage
-    svmem= psutil.virtual_memory()
-    memm= "**Memori Digunakan**\n"
+    svmem = psutil.virtual_memory()
+    memm = "**Memori Digunakan**\n"
     memm += f"`Total     : {get_size(svmem.total)}`\n"
     memm += f"`Available : {get_size(svmem.available)}`\n"
     memm += f"`Used      : {get_size(svmem.used)}`\n"
     memm += f"`Percentage: {svmem.percent}%`\n"
     # Bandwidth Usage
-    bw= "**Bandwith Digunakan**\n"
+    bw = "**Bandwith Digunakan**\n"
     bw += f"`Unggah  : {get_size(psutil.net_io_counters().bytes_sent)}`\n"
     bw += f"`Download: {get_size(psutil.net_io_counters().bytes_recv)}`\n"
-    help_string= f"{str(softw)}\n"
+    help_string = f"{str(softw)}\n"
     help_string += f"{str(cpuu)}\n"
     help_string += f"{str(memm)}\n"
     help_string += f"{str(bw)}\n"
@@ -109,7 +109,7 @@ async def psu(event):
 
 
 def get_size(bytes, suffix="B"):
-    factor= 1024
+    factor = 1024
     for unit in ["", "K", "M", "G", "T", "P"]:
         if bytes < factor:
             return f"{bytes:.2f}{unit}{suffix}"
@@ -120,15 +120,15 @@ def get_size(bytes, suffix="B"):
 async def sysdetails(sysd):
     if not sysd.text[0].isalpha() and sysd.text[0] not in ("/", "#", "@", "!"):
         try:
-            fetch= await asyncrunapp(
+            fetch = await asyncrunapp(
                 "neofetch",
                 "--stdout",
                 stdout=asyncPIPE,
                 stderr=asyncPIPE,
             )
 
-            stdout, stderr= await fetch.communicate()
-            result= str(stdout.decode().strip()) + \
+            stdout, stderr = await fetch.communicate()
+            result = str(stdout.decode().strip()) + \
                 str(stderr.decode().strip())
 
             await sysd.edit("`" + result + "`")
@@ -141,7 +141,7 @@ async def bot_ver(event):
     if event.text[0].isalpha() or event.text[0] in ("/", "#", "@", "!"):
         return
     if which("git") is not None:
-        ver= await asyncrunapp(
+        ver = await asyncrunapp(
             "git",
             "describe",
             "--all",
@@ -149,10 +149,10 @@ async def bot_ver(event):
             stdout=asyncPIPE,
             stderr=asyncPIPE,
         )
-        stdout, stderr= await ver.communicate()
+        stdout, stderr = await ver.communicate()
         str(stdout.decode().strip()) + str(stderr.decode().strip())
 
-        rev= await asyncrunapp(
+        rev = await asyncrunapp(
             "git",
             "rev-list",
             "--all",
@@ -160,8 +160,8 @@ async def bot_ver(event):
             stdout=asyncPIPE,
             stderr=asyncPIPE,
         )
-        stdout, stderr= await rev.communicate()
-        revout= str(stdout.decode().strip()) + str(stderr.decode().strip())
+        stdout, stderr = await rev.communicate()
+        revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
             "**⸙-**⭐Bii-Userbot⭐ Versi:** \n "
@@ -179,10 +179,10 @@ async def bot_ver(event):
 async def pipcheck(pip):
     if pip.text[0].isalpha() or pip.text[0] in ("/", "#", "@", "!"):
         return
-    pipmodule= pip.pattern_match.group(1)
+    pipmodule = pip.pattern_match.group(1)
     if pipmodule:
         await pip.edit("`Mencari...`")
-        pipc= await asyncrunapp(
+        pipc = await asyncrunapp(
             "pip3",
             "search",
             pipmodule,
@@ -190,13 +190,13 @@ async def pipcheck(pip):
             stderr=asyncPIPE,
         )
 
-        stdout, stderr= await pipc.communicate()
-        pipout= str(stdout.decode().strip()) + str(stderr.decode().strip())
+        stdout, stderr = await pipc.communicate()
+        pipout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         if pipout:
             if len(pipout) > 4096:
                 await pip.edit("`Output Terlalu Besar, Dikirim Sebagai File`")
-                file= open("output.txt", "w+")
+                file = open("output.txt", "w+")
                 file.write(pipout)
                 file.close()
                 await pip.client.send_file(
@@ -225,9 +225,9 @@ async def pipcheck(pip):
 
 @ Xa_cmd(pattern="(?:xaalive)\\s?(.)?")
 async def amireallyalive(alive):
-    user= await bot.get_me()
+    user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    output= (
+    output = (
         f" **⭐𝘽𝙄𝙄-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⭐** \n\n"
         f"\n__**{XA_TEKS_KUSTOM}**__\n\n\n"
         f"╭✺╼━━━━━━━━━━━━━━━❀╮\n"
@@ -241,9 +241,9 @@ async def amireallyalive(alive):
         f"[ɢʀᴏᴜᴘꜱ](https://t.me/rexaprivateroom) | [ᴄʜᴀɴɴᴇʟ](https://t.me/chnyabii) | [ᴏᴡɴᴇʀ](https://t.me/Aiibiie) | [ɢɪᴛʜᴜʙ](https://github.com/Rexashh/Xa-Userbot)")
     if ALIVE_LOGO:
         try:
-            logo= ALIVE_LOGO
+            logo = ALIVE_LOGO
             await alive.delete()
-            msg= await bot.send_file(alive.chat_id, logo, caption=output)
+            msg = await bot.send_file(alive.chat_id, logo, caption=output)
             await asyncio.sleep(200)
             await msg.delete()
         except BaseException:
@@ -263,7 +263,7 @@ async def amireallyalive(alive):
 async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    output= (
+    output = (
         f"●ᚒᚔᚔᚔᚔᚔᚔ᯽࿅༒࿅᯽ᚔᚔᚔᚔᚔᚔᚒ● \n"
         f"⛥ 🤴 ◦ `ᴏᴡɴᴇʀ    :`[Xa](t.me/JustRex) \n"
         f"⛥ 🖥️ ◦ `ꜱʏꜱᴛᴇᴍ   :`Ubuntu 20.10 \n"
@@ -274,9 +274,9 @@ async def amireallyalive(alive):
         f"●ᚒᚔᚔᚔᚔᚔᚔ֍࿅⛤࿅֍ᚔᚔᚔᚔᚔᚔᚒ●")
     if ALIVE_LOGO:
         try:
-            logo= ALIVE_LOGO
+            logo = ALIVE_LOGO
             await alive.delete()
-            msg= await bot.send_file(alive.chat_id, logo, caption=output)
+            msg = await bot.send_file(alive.chat_id, logo, caption=output)
             await asyncio.sleep(200)
             await msg.delete()
         except BaseException:
@@ -294,7 +294,7 @@ async def amireallyalive(alive):
 
 @ Xa_cmd(pattern="(?:alive|on)\\s?(.)?")
 async def redis(alive):
-    user= await bot.get_me()
+    user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     await alive.edit("__𝘚𝘛𝘈𝘙.__")
     await alive.edit("__𝘚𝘛𝘈𝘙..__")
@@ -305,7 +305,7 @@ async def redis(alive):
     await alive.edit("__𝘚𝘛𝘈𝘙...__")
     await alive.edit("⭐")
     await asyncio.sleep(2)
-    output= (
+    output = (
         f"╔═⭐𝘽𝙄𝙄❀𝙐𝙎𝙀𝙍𝘽𝙊𝙏⭐═════ \n"
         f"╠  `Name     :` {DEFAULTUSER} \n"
         f"╠  `Username :` @{user.username} \n"
@@ -320,9 +320,9 @@ async def redis(alive):
         f"╚══════════════════྿")
     if ALIVE_LOGO:
         try:
-            logo= ALIVE_LOGO
+            logo = ALIVE_LOGO
             await alive.delete()
-            msg= await bot.send_file(alive.chat_id, logo, caption=output)
+            msg = await bot.send_file(alive.chat_id, logo, caption=output)
             await asyncio.sleep(500)
             await msg.delete()
         except BaseException:
@@ -341,20 +341,20 @@ async def redis(alive):
 @ Xa_cmd(pattern="aliveu")
 async def amireallyaliveuser(username):
     """ For .aliveu command, change the username in the .alive command. """
-    message= username.text
-    output= ".aliveu [new username] tidak boleh kosong"
+    message = username.text
+    output = ".aliveu [new username] tidak boleh kosong"
     if not (message == ".aliveu" and message[7:8] != " "):
-        newuser= message[8:]
+        newuser = message[8:]
         global DEFAULTUSER  # global statement
-        DEFAULTUSER= username
-        output= "Successfully changed user to " + newuser + "!"
+        DEFAULTUSER = username
+        output = "Successfully changed user to " + newuser + "!"
     await username.edit("`" f"{output}" "`")
 
 
 @ Xa_cmd(pattern="resetalive$")
 async def amireallyalivereset(ureset):
     global DEFAULTUSER  # global statement
-    DEFAULTUSER= str(ALIVE_NAME) if ALIVE_NAME else uname().node
+    DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
     await ureset.edit("`" "Successfully reset user for alive!" "`")
 
 
