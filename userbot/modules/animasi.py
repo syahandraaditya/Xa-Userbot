@@ -3,15 +3,15 @@ from userbot import CMD_HELP, CMD_HANDLER as cmd
 from userbot.utils import Xa_cmd
 
 
-@Xa_cmd(pattern='sadboy(?: |$)(.*)')
+@Xa_cmd(pattern='lovemyself(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
-    await typew.edit("`Pertama-tama kamu cantik`")
+    await typew.edit("`Pertama-tama Aku Cantik`")
     sleep(2)
-    await typew.edit("`Kedua kamu manis`")
+    await typew.edit("`Kedua Aku Manis`")
     sleep(1)
-    await typew.edit("`Dan yang terakhir adalah kamu bukan jodohku`")
+    await typew.edit("`Dan yang terakhir Aku Imut Karena I Love Myself`")
 
 # Create by myself @localheart
 
@@ -88,7 +88,7 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi":
-    f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}sadboy`\
+    f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}lovemyself`\
     \n↳ : Biasalah sadboy hikss\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}punten` dan `.pantau`\
     \n↳ : Coba aja hehehe.\
