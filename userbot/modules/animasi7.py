@@ -11,13 +11,13 @@ async def koc(e):
         sleep(1)
         await e.edit("💜⭐✨🌠")
         sleep(1)
-        await e.edit("💜💜💜💜")
+        await e.edit("⭐⭐⭐⭐")
         sleep(1)
         await e.edit("⭐✨🌠💜")
         sleep(1)
         await e.edit("BII🌠✨")
         sleep(1)
-        await e.edit("BINTANG💜💜")
+        await e.edit("BINTANG💜⭐💜")
         sleep(1)
         await e.edit("🌠⭐💜✨")
         sleep(1)
@@ -30,7 +30,7 @@ async def koc(e):
         sleep(1)
         await e.edit("BIIII LUCU")
         sleep(1)
-        await e.edit("BI SUKA UNGU")
+        await e.edit("BI SUKA REXA SUKA")
         sleep(1)
         await e.edit("✨💜🌠⭐")
         sleep(1)
@@ -42,15 +42,15 @@ async def koc(e):
         sleep(1)
         await e.edit("TAPI NGESELIN HUU🤣")
         sleep(1)
-        await e.edit("BII BINTANG ⭐")
-        sleep(1)
-        await e.edit("CUMA MAU BILANG")
-        sleep(1)
-        await e.edit("BII LUCU")
+        await e.edit("BII BII BII ⭐")
+        sleep(2)
+        await e.edit("BINTANGGG REXA SUKA KATANYA")
+        sleep(2)
+        await e.edit("UDAH CINTA JUGA KATANYA")
         sleep(1)
         await e.edit("BIIIIIIII⭐⭐⭐")
-        sleep(1)
-        await e.edit("POKOKNYA MAU BII💞")
+        sleep(2)
+        await e.edit("BII I LOVE YOU💞")
 
 
 @Xa_cmd(pattern="orgil(?: |$)(.*)")
@@ -111,36 +111,36 @@ async def typewriter(typew):
     await typew.edit("`-TAMAT-`")
 
 
-@Xa_cmd(pattern="ass(?: |$)(.*)")
+@Xa_cmd(pattern="bintang(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("`Salam dulu biar sopan....`")
+    await typew.edit("`Mau ngasih tau sebentar....`")
     sleep(2)
-    await typew.edit("`A`")
-    await typew.edit("`As`")
-    await typew.edit("`Ass`")
-    await typew.edit("`Assa`")
-    await typew.edit("`Assal`")
-    await typew.edit("`Assala`")
-    await typew.edit("`Assalam`")
-    await typew.edit("`Assalamu`")
-    await typew.edit("`Assalamu'a`")
-    await typew.edit("`Assalamu'al`")
-    await typew.edit("`Assalamu'ala`")
-    await typew.edit("`Assalamu'alai`")
-    await typew.edit("`Assalamu'alaik`")
-    await typew.edit("`Assalamu'alaiku`")
-    await typew.edit("`Assalamu'alaikum`")
+    await typew.edit("`B`")
+    await typew.edit("`Bi`")
+    await typew.edit("`Bin`")
+    await typew.edit("`Bint`")
+    await typew.edit("`Binta`")
+    await typew.edit("`Bintang`")
+    await typew.edit("`Bintang R`")
+    await typew.edit("`Bintang Re`")
+    await typew.edit("`Bintang Rex`")
+    await typew.edit("`Bintang Rexa`")
+    await typew.edit("`Bintang Rexa S`")
+    await typew.edit("`Bintang Rexa Sa`")
+    await typew.edit("`Bintang Rexa Say`")
+    await typew.edit("`Bintang Rexa Saya`")
+    await typew.edit("`Bintanh Rexa Sayang`")
     sleep(3)
-    await typew.edit("**YANG GA JAWAB, FIX ATHEISS!!**")
+    await typew.edit("**BII JUGA SAYANG KAN?**")
 # Create by myself @ram-ubot
 
 
 CMD_HELP.update({
     "animasi7": f"`{cmd}gabut` ; `{cmd}orgil`\
     \nUsage: ntahlah gabut doang.\
-    \n\n`{cmd}ass`\
-    \nUsage: Salam dulu biar sopan."
+    \n\n`{cmd}bintang`\
+    \nUsage: Mau ngasih tau ke bii."
 })
 
 CMD_HELP.update({
