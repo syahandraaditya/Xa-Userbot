@@ -7,11 +7,11 @@ from userbot.utils import Xa_cmd
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
-    await typew.edit("`Pertama-tama Aku Cantik`")
+    await typew.edit("`Pertama-tama aku Cantik`")
     sleep(2)
-    await typew.edit("`Kedua Aku Manis`")
+    await typew.edit("`Kedua aku Manis`")
     sleep(1)
-    await typew.edit("`Dan yang terakhir Aku Imut Karena I Love Myself`")
+    await typew.edit("`Dan yang terakhir aku Imut Karena I Love Myself`")
 
 # Create by myself @localheart
 
