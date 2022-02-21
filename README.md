@@ -1,4 +1,4 @@
-<h1 align="center">🦖XA-USERBOT🦖
+<h1 align="center">⭐BII-USERBOT⭐
 
     
     
@@ -12,23 +12,15 @@
     <a href="https://t.me/rexaprivateroom"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
-<h1 align="center">֍ xᴀ ᴜsᴇʀʙᴏᴛ ֍<h1 align="center">
+<h1 align="center">֍ SPECIAL USERBOT FOR MY LOVE ֍<h1 align="center">
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/543425c832763405474c4.jpg">
+  <img src="https://telegra.ph/file/db0ae42e57f8748504969.jpg">
 </p>
     
 ### ATTETION 📢
-Saya tidak bertanggung jawab atas penyalahgunaan bot ini.
-
-Bot ini dimaksudkan untuk bersenang-senang sekaligus membantu anda
-
-mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
-
-Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak.
-    
-    
+REPO INI DIBUAT OLEH [REXA](http://t.me/JustRex) SPESIAL UNTUK PACAR SAYA YANG SANGAT SAYA CINTA DAN SAYA SAYANG YAITU [BII](https://t.me/Aiibiie)
 
 <h4 align="center"> ⚠️DEPLOY ON TELEGRAM⚠️ </p>
 <p align="center"><a href="https://telegram.dog/XTZ_HerokuBot?start=UmV4YXNoaC9YYS1Vc2VyYm90IFhhLVVzZXJib3Q"> <img src="https://img.shields.io/badge/Deploy%20On%20Telegram-blue?style=for-the-badge&logo=telegram" width="200" height="35.60" /></a></p>
