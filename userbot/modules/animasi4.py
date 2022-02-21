@@ -5,33 +5,33 @@ from telethon import events
 import asyncio
 
 
-@Xa_cmd(pattern="sayang$")
+@Xa_cmd(pattern="bisayang$")
 async def koc(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("I LOVEE YOUUU 💕")
+        await e.edit("INI KHUSUS UNTUK BII💕")
         await e.edit("💝💘💓💗")
         await e.edit("💞💕💗💘")
         await e.edit("💝💘💓💗")
         await e.edit("💞💕💗💘")
         await e.edit("💘💞💗💕")
         await e.edit("💘💞💕💗")
-        await e.edit("SAYANG KAMU 💝💖💘")
+        await e.edit("BI REXA SUKA 💝💖💘")
         await e.edit("💝💘💓💗")
         await e.edit("💞💕💗💘")
         await e.edit("💘💞💕💗")
-        await e.edit("SAYANG")
-        await e.edit("KAMU")
-        await e.edit("SELAMANYA 💕")
+        await e.edit("REXA")
+        await e.edit("BOLEHKAN??")
+        await e.edit("SAYANG BII? 💕")
         await e.edit("💘💘💘💘")
-        await e.edit("SAYANG")
-        await e.edit("KAMU")
-        await e.edit("SAYANG")
-        await e.edit("KAMU")
+        await e.edit("BII")
+        await e.edit("BAIK")
+        await e.edit("BII CANTIK")
+        await e.edit("REXA IJIN BILANG")
         await e.edit("I LOVE YOUUUU")
-        await e.edit("MY BABY")
+        await e.edit("MY STAR⭐")
         await e.edit("💕💞💘💝")
         await e.edit("💘💕💞💝")
-        await e.edit("SAYANG KAMU💞")
+        await e.edit("TERIMAKASIH BINTANG⭐💞")
 
 
 @Xa_cmd(pattern='dino(?: |$)(.*)')
@@ -377,7 +377,7 @@ async def _(event):
             "`Mengirim Cintaku.. 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Mengirim Cintaku.. 84%\n█████████████████████▒▒▒▒ `",
             "`Mengirim Cintaku.. 100%\n█████████CINTAKU███████████ `",
-            f"`Cintaku Sekarang Sepenuhnya Terkirim Padamu, Dan Sekarang Aku Sangat Mencintai Mu, I Love You 💞`"]
+            f"`Cintaku Sekarang Sepenuhnya Terkirim Padamu, Dan Sekarang Aku Sangat Mencintai Mu, I Love You Bintang 💞`"]
 
         for i in animation_ttl:
 
@@ -392,6 +392,6 @@ CMD_HELP.update({
     \n↳ : Dikala gabut, yaaa pake aja xixixi.\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}cinta`\
     \n↳ : Mengirim cinta tai anjiing ke seseorang.\
-    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}sayang`\
+    \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}bisayang`\
     \n↳ : Berubah menjadi kadal."
 })
