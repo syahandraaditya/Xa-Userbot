@@ -3,15 +3,15 @@ from userbot import CMD_HELP, CMD_HANDLER as cmd
 from userbot.utils import Xa_cmd
 
 
-@Xa_cmd(pattern='Rexa(?: |$)(.*)')
+@Xa_cmd(pattern='biikenalan(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(3)
-    await typew.edit("`Hai Perkenalkan Namaku Rexa`")
+    await typew.edit("`Hai Perkenalkan Namaku Bintang`")
     sleep(3)
-    await typew.edit("`20 Tahun`")
+    await typew.edit("`19 Tahun`")
     sleep(1)
-    await typew.edit("`Tinggal Di Bekasi, Salam Kenal:)`")
+    await typew.edit("`Tinggal Di Bali, Salam Kenal:)`")
 # Create by myself @localheart
 
 
@@ -19,7 +19,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(3)
-    await typew.edit("`Cuma Mau Bilang`")
+    await typew.edit("`Bii Rexa Cuma mau bilang`")
     sleep(3)
     await typew.edit("`Aku Sayang Kamu`")
     sleep(1)
@@ -40,8 +40,8 @@ async def typewriter(typew):
 
 
 CMD_HELP.update({
-    "oi": f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}Rexa`\
-    \n↳ : perkenalan Xa\
+    "oi": f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}biikenalan`\
+    \n↳ : perkenalan bii\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}sayang`\
     \n↳ : Gombalan maut`\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}semangat`\
