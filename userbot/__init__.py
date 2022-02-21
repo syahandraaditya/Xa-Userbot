@@ -24,7 +24,7 @@ from requests import get
 from telethon import Button
 from telethon.sync import TelegramClient, custom, events
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
-from telethon.tl.functions.channels import JoinChannelRequest as GetSec
+from telethon.tl.functions.chanels import JoinChannelRequest as GetSec
 from telethon.sessions import StringSession
 from telethon import Button, events, functions, types
 from telethon.tl.types import InputWebDocument
@@ -121,7 +121,7 @@ PMPERMIT_TEXT = os.environ.get("PMPERMIT_TEXT", None)
 
 # Custom Pmpermit pic
 PMPERMIT_PIC = os.environ.get(
-    "PMPERMIT_PIC") or "https://telegra.ph/file/9b010ead0692e3bc28df6.jpg"
+    "PMPERMIT_PIC") or "https://telegra.ph/file/b571da5fa8fcc7788708d.mp4"
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
@@ -219,7 +219,7 @@ YOUTUBE_API_KEY = os.environ.get(
     "YOUTUBE_API_KEY") or "AIzaSyACwFrVv-mlhICIOCvDQgaabo6RIoaK8Dg"
 
 # Untuk Perintah .Xaalive
-XA_TEKS_KUSTOM = os.environ.get("XA_TEKS_KUSTOM", "I'am Using Xa-Userbot🦖")
+XA_TEKS_KUSTOM = os.environ.get("XA_TEKS_KUSTOM", "I'am Using Bii-Userbot⭐")
 
 # Untuk Mengubah Pesan Welcome
 START_WELCOME = os.environ.get("START_WELCOME", None)
@@ -255,17 +255,17 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/9b010ead0692e3bc28df6.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/b571da5fa8fcc7788708d.mp4"
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/0b30f41459130f3bcf1af.jpg"
+    "INLINE_PIC") or "https://telegra.ph/file/b571da5fa8fcc7788708d.mp4"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🦖"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "⭐"
 
 # °Xa-Userbot°
-OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/JustRex"
+OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/Aiibiie"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -402,7 +402,7 @@ with bot:
         bot.loop.run_until_complete(checking())
     except BaseException:
         LOGS.info(
-            "Join Support Group @rexaptivateroom and Channel @tirexgugel to see the updates of userbot"
+            "Join Support Group @rexaptivateroom and Channel @chnyabii to see the updates of userbot"
             "Don't Leave")
         quit(1)
 
@@ -444,7 +444,7 @@ with bot:
 async def update_restart_msg(chat_id, msg_id):
     DEFAULTUSER = ALIVE_NAME or "Set `ALIVE_NAME` ConfigVar!"
     message = (
-        f"**Xa-Userbot v{BOT_VER} is back up and running!**\n\n"
+        f"**Bii-Userbot v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {DEFAULTUSER}"
@@ -556,7 +556,7 @@ with bot:
                 current_page_number = int(lockpage)
                 buttons = paginate_help(
                     current_page_number, dugmeler, "helpme")
-                text = f"**🦖 Xa-Userbot Inline Menu 🦖**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
+                text = f"**⭐ Bii-Userbot Inline Menu ⭐**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules"
                 await event.edit(
                     text,
                     file=roselogo,
@@ -648,14 +648,14 @@ with bot:
                 result = builder.photo(
                     file=roselogo,
                     link_preview=False,
-                    text=f"**✨ Xa-Userbot Inline Menu ✨**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**⭐ Bii-Userbot Inline Menu ✨**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
                     description="Repository Xa - Userbot",
-                    url="https://t.me/tirexgugel",
+                    url="https://t.me/chnyabii",
                     thumb=InputWebDocument(
                         INLINE_PIC,
                         0,
