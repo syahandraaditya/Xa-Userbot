@@ -29,13 +29,13 @@ for module_name in ALL_MODULES:
 LOGS.info(
     f"Jika {ALIVE_NAME} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/rexaprivateroom")
 LOGS.info(
-    f"🦖Xa-Userbot🦖 ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]")
+    f"⭐Bii-Userbot⭐ ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]")
 
 
 async def check_alive():
     try:
         if BOTLOG_CHATID != 0:
-            await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"🦖 **Xa Userbot Has Been Actived**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 8.0@master\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @tirexgugel ")
+            await bot.send_file(BOTLOG_CHATID, ALIVE_LOGO, caption=f"⭐ **Bii Userbot Has Been Actived**!!\n━━━━━━━━━━━━━━━\n➠ **Userbot Version** - 8.0@master\n━━━━━━━━━━━━━━━\n➠ **Powered By:** @chnyabii ")
     except Exception as e:
         LOGS.info(str(e))
     try:
