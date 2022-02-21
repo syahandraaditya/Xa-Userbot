@@ -99,11 +99,11 @@ async def typewriter(typew):
     )
 
 
-@Xa_cmd(pattern="gembel(?: |$)(.*)")
+@Xa_cmd(pattern="silau(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
-        "**MUKA BAPAK LU KEK KELAPA SAWIT ANJING, GA USAH NGATAIN ORANG, MUKA LU AJA KEK GEMBEL TEXAS KONTOL!!**"
+        "**https://telegra.ph/file/db0ae42e57f8748504969.jpg!!**"
     )
 
 
@@ -111,7 +111,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
-        "**GAK KEREN LO KEK BEGITU GOBLOK, KELUARGA LU BAWA SINI GUA LUDAHIN SATU-SATU, SETDAH!!!**"
+        "**EMANG HARUS BGT YA LU BEGITU?, SERIUS? HARUS BANGET BEGITU? BANGET NIH?**"
     )
 
 
@@ -144,8 +144,8 @@ CMD_HELP.update(
         \n  •  **Function : **Nyuruh orang mati aja goblok wkwk\
         \n\n  •  **Syntax :** `{cmd}sokab`\
         \n  •  **Function : **Ngeledek orang so kenal so dekat padahal kga kenal goblok\
-        \n\n  •  **Syntax :** `{cmd}gembel`\
-        \n  •  **Function : **Ngeledek bapaknya si jamet\
+        \n\n  •  **Syntax :** `{cmd}silau`\
+        \n  •  **Function : **Ngeluarin telegraph foto Bii silau\
         \n\n  •  **Syntax :** `{cmd}cuih`\
         \n  •  **Function : **Ngeludahin keluarganya satu satu wkwk\
         \n\n**Klo mau Req, kosa kata dari lu Hubungi @JustRex**\
