@@ -33,7 +33,7 @@ modules = CMD_HELP
 async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
-    time_list = [
+    time_list = []
     time_suffix_list = ["Dtk", "Mnt", "Jam", "Hari"]
 
     while count < 4:
