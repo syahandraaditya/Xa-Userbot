@@ -398,7 +398,7 @@ async def checking():
         pass
 
 with bot:
-    try: 
+    try:
         bot.loop.run_until_complete(checking())
     except BaseException:
         LOGS.info(
