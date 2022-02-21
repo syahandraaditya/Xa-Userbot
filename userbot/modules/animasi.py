@@ -3,7 +3,7 @@ from userbot import CMD_HELP, CMD_HANDLER as cmd
 from userbot.utils import Xa_cmd
 
 
-@Xa_cmd(pattern='lovemyself(?: |$)(.*)')
+@Xa_cmd(pattern='loveme(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(2)
@@ -88,7 +88,7 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "animasi":
-    f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}lovemyself`\
+    f"𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}loveme`\
     \n↳ : Biasalah sadboy hikss\
     \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `{cmd}punten` dan `.pantau`\
     \n↳ : Coba aja hehehe.\
