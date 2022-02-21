@@ -33,7 +33,7 @@ modules = CMD_HELP
 async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
-    time_list = []
+    time_list = [
     time_suffix_list = ["Dtk", "Mnt", "Jam", "Hari"]
 
     while count < 4:
@@ -164,7 +164,7 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⸙-**🦖Xa-Userbot🦖 Versi:** \n "
+            "**⸙-**⭐Bii-Userbot⭐ Versi:** \n "
             f"heads/Xa-Userbot-0-x634i7u1"
             "\n**⸙-**Revisi:**\n "
             f"{revout}"
@@ -228,7 +228,7 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f" **🦖xᴀ-ᴜsᴇʀʙᴏᴛ🦖** \n\n"
+        f" **⭐𝘽𝙄𝙄-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⭐** \n\n"
         f"\n__**{XA_TEKS_KUSTOM}**__\n\n\n"
         f"╭֍╼━━━━━━━━━━━━━━━֍╮\n"
         f"◙ `Name       :` {DEFAULTUSER} \n"
@@ -238,7 +238,7 @@ async def amireallyalive(alive):
         f"◙ `Bot Ver    :` {BOT_VER} \n"
         f"◙ `Modules    :` {len(modules)} \n"
         f"╰֍╼━━━━━━━━━━━━━━━֍╯\n"
-        f"[ɢʀᴏᴜᴘꜱ](https://t.me/rexaprivateroom) | [ᴄʜᴀɴɴᴇʟ](https://t.me/tirexgugel) | [ᴏᴡɴᴇʀ](https://t.me/JustRex) | [ɢɪᴛʜᴜʙ](https://github.com/Rexashh/Xa-Userbot)")
+        f"[ɢʀᴏᴜᴘꜱ](https://t.me/rexaprivateroom) | [ᴄʜᴀɴɴᴇʟ](https://t.me/chnyabii) | [ᴏᴡɴᴇʀ](https://t.me/Aiibiie) | [ɢɪᴛʜᴜʙ](https://github.com/Rexashh/Xa-Userbot)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -296,17 +296,17 @@ async def amireallyalive(alive):
 async def redis(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("__Loading.__")
-    await alive.edit("__Loading..__")
-    await alive.edit("__Loading.__")
-    await alive.edit("__Loading..__")
-    await alive.edit("__Loading...__")
-    await alive.edit("__Loading..__")
-    await alive.edit("__Loading...__")
-    await alive.edit("⚡")
+    await alive.edit("__𝘚𝘛𝘈𝘙.__")
+    await alive.edit("__𝘚𝘛𝘈𝘙..__")
+    await alive.edit("__𝘚𝘛𝘈𝘙.__")
+    await alive.edit("__𝘚𝘛𝘈𝘙..__")
+    await alive.edit("__𝘚𝘛𝘈𝘙...__")
+    await alive.edit("__𝘚𝘛𝘈𝘙..__")
+    await alive.edit("__𝘚𝘛𝘈𝘙...__")
+    await alive.edit("⭐")
     await asyncio.sleep(2)
     output = (
-        f"┏━━━━🦖xᴀ-υѕᴇʀʙᴏᴛ🦖━━━━ \n"
+        f"┏━━━⭐𝘽𝙄𝙄 𝙐𝙎𝙀𝙍𝘽𝙊𝙏⭐━━━━ \n"
         f"┣  `Name     :` {DEFAULTUSER} \n"
         f"┣  `Username :` @{user.username} \n"
         f"┣  `Telethon :` Ver {version.__version__} \n"
@@ -314,9 +314,9 @@ async def redis(alive):
         f"┣  `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
         f"┣  `Bot Ver  :` {BOT_VER} \n"
         f"┣  `Modules  :` {len(modules)} Modules \n"
-        f"┣  `GitHub   :` [Xa](https://github.com/Rexashh/Xa-Userbot) \n"
+        f"┣  `GitHub   :` [𝘽𝙄𝙄](https://github.com/Rexashh/Xa-Userbot) \n"
         f"┣  `Support  :` [Groups](https://t.me/rexaprivateroom) \n"
-        f"┣  `Owner    :` [Rexa](https://t.me/JustRex) \n"
+        f"┣  `Owner    :` [𝘽𝙄𝙄](https://t.me/Aiibiie) \n"
         f"┗━━━━━━━━━━━━━━━━━━━━━")
     if ALIVE_LOGO:
         try:
