@@ -55,17 +55,17 @@ async def typewriter(typew):
     await typew.edit("**MAEN BOT MULU ALAY NGENTOTT, KESANNYA NORAK GOBLOK!!!**")
 
 
-@Xa_cmd(pattern="rex(?: |$)(.*)")
+@Xa_cmd(pattern="bii(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**REXA BAIK KAN KAWAN KAWAN? IYADONG PASTI?**")
+    await typew.edit("**BII BAIK KAN KAWAN KAWAN? IYADONG PASTI?**")
 
 
 @Xa_cmd(pattern="war(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
-        "**WAR WAR PALAK BAPAK KAU WAR, SOK KERAS BANGET GOBLOK, DI TONGKRONGAN JADI BABU, DI TELE SOK JAGOAN...**"
+        "**APAANSIH WAR? KALO GA SUKA CABUT SAJA, KALO EMANG LU GAMAU CABUT, BIAR GUA YANG CABUT**"
     )
 
 
@@ -81,7 +81,7 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit(
-        "**CUIHHHH, MAKAN AJA MASIH NGEMIS LO GOBLOK, JANGAN SO NINGGI YA KONTOL GA KEREN LU KEK GITU NGENTOT!!**"
+        "**KALO MISKIN GA USAH SO KAYA!**"
     )
 
 
