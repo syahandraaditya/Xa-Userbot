@@ -84,14 +84,14 @@ async def typewriter(typew):
                      "╬═╬/ \\ \n")
 
 
-@Xa_cmd(pattern='tembak(?: |$)(.*)')
+@Xa_cmd(pattern='tembakbi(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("_/﹋\\_\n"
                      "(҂`_´)\n"
                      "<,︻╦╤─ ҉\n"
                      r"_/﹋\_"
-                     "\n**Mau Jadi Pacarku Gak?!**")
+                     "\n**Bintang ku tembak ya kalo ngeselin!**")
 
 
 @Xa_cmd(pattern='bundir(?: |$)(.*)')
@@ -304,7 +304,7 @@ CMD_HELP.update({
     "animasi5":
     f"`{cmd}bulan` ; `{cmd}hati` ; `{cmd}bernyanyi`\
     \nUsage: liat aja.\
-    \n\n`{cmd}helikopter` ; `{cmd}tank` `{cmd}tembak`\n`{cmd}bundir`\
+    \n\n`{cmd}helikopter` ; `{cmd}tank` `{cmd}tembakbi`\n`{cmd}bundir`\
     \nUsage: liat sendiri\
     \n\n`{cmd}y`\
     \nUsage: jempol\
