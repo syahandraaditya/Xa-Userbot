@@ -34,7 +34,7 @@ async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
     time_list = [
-    time_suffix_list= ["Dtk", "Mnt", "Jam", "Hari"]
+    time_suffix_list = ["Dtk", "Mnt", "Jam", "Hari"]
 
     while count < 4:
         count += 1
@@ -230,13 +230,13 @@ async def amireallyalive(alive):
     output= (
         f" **⭐𝘽𝙄𝙄-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⭐** \n\n"
         f"\n__**{XA_TEKS_KUSTOM}**__\n\n\n"
-        f"╭֍╼━━━━━━━━━━━━━━━֍╮\n"
-        f"◙ `Name       :` {DEFAULTUSER} \n"
-        f"◙ `Username   :` @{user.username} \n"
-        f"◙ `Telethon   :` {version.__version__} \n"
-        f"◙ `Python     :` {python_version()} \n"
-        f"◙ `Bot Ver    :` {BOT_VER} \n"
-        f"◙ `Modules    :` {len(modules)} \n"
+        f"╭✺╼━━━━━━━━━━━━━━━❀╮\n"
+        f"❁ `Name       :` {DEFAULTUSER} \n"
+        f"❁ `Username   :` @{user.username} \n"
+        f"❁ `Telethon   :` {version.__version__} \n"
+        f"❁ `Python     :` {python_version()} \n"
+        f"❁ `Bot Ver    :` {BOT_VER} \n"
+        f"❁ `Modules    :` {len(modules)} \n"
         f"╰֍╼━━━━━━━━━━━━━━━֍╯\n"
         f"[ɢʀᴏᴜᴘꜱ](https://t.me/rexaprivateroom) | [ᴄʜᴀɴɴᴇʟ](https://t.me/chnyabii) | [ᴏᴡɴᴇʀ](https://t.me/Aiibiie) | [ɢɪᴛʜᴜʙ](https://github.com/Rexashh/Xa-Userbot)")
     if ALIVE_LOGO:
@@ -306,18 +306,18 @@ async def redis(alive):
     await alive.edit("⭐")
     await asyncio.sleep(2)
     output= (
-        f"┏━━━⭐𝘽𝙄𝙄 𝙐𝙎𝙀𝙍𝘽𝙊𝙏⭐━━━━ \n"
-        f"┣  `Name     :` {DEFAULTUSER} \n"
-        f"┣  `Username :` @{user.username} \n"
-        f"┣  `Telethon :` Ver {version.__version__} \n"
-        f"┣  `Python   :` Ver {python_version()} \n"
-        f"┣  `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
-        f"┣  `Bot Ver  :` {BOT_VER} \n"
-        f"┣  `Modules  :` {len(modules)} Modules \n"
-        f"┣  `GitHub   :` [𝘽𝙄𝙄](https://github.com/Rexashh/Xa-Userbot) \n"
-        f"┣  `Support  :` [Groups](https://t.me/rexaprivateroom) \n"
-        f"┣  `Owner    :` [𝘽𝙄𝙄](https://t.me/Aiibiie) \n"
-        f"┗━━━━━━━━━━━━━━━━━━━━━")
+        f"╔═⭐𝘽𝙄𝙄❀𝙐𝙎𝙀𝙍𝘽𝙊𝙏⭐═════ \n"
+        f"╠  `Name     :` {DEFAULTUSER} \n"
+        f"╠  `Username :` @{user.username} \n"
+        f"╠  `Telethon :` Ver {version.__version__} \n"
+        f"╠  `Python   :` Ver {python_version()} \n"
+        f"╠  `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
+        f"╠  `Bot Ver  :` {BOT_VER} \n"
+        f"╠  `Modules  :` {len(modules)} Modules \n"
+        f"╠  `GitHub   :` [𝘽𝙄𝙄](https://github.com/Rexashh/Xa-Userbot) \n"
+        f"╠  `Support  :` [Groups](https://t.me/rexaprivateroom) \n"
+        f"╠  `Owner    :` [𝘽𝙄𝙄](https://t.me/Aiibiie) \n"
+        f"╚══════════════════྿")
     if ALIVE_LOGO:
         try:
             logo= ALIVE_LOGO
