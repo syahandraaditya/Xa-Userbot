@@ -34,9 +34,9 @@ async def gcast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        await event.edit("**Berikan Sebuah Pesan atau Reply**")
+        await event.edit("**𝘒𝘢𝘴𝘪𝘩 𝘗𝘦𝘴𝘢𝘯 𝘢𝘵𝘢𝘶 𝘙𝘦𝘱𝘭𝘺 𝘱𝘦𝘴𝘢𝘯 𝘒𝘢𝘭𝘰 𝘮𝘢𝘶 𝘨𝘤𝘢𝘴𝘵**")
         return
-    kk = await event.edit("`Sedang Mengirim Pesan Secara Global... 📢`")
+    kk = await event.edit("`𝘉𝘦𝘯𝘵𝘢𝘳 𝘭𝘢𝘨𝘪 𝘯𝘺𝘰𝘣𝘢 𝘯𝘨𝘪𝘳𝘪𝘮 𝘯𝘪𝘩... 📢`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -51,7 +51,7 @@ async def gcast(event):
             except BaseException:
                 er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**"
+        f"**𝘎𝘤𝘢𝘴𝘵𝘯𝘺𝘢 𝘉𝘪𝘪 𝘬𝘦 𝘬𝘪𝘳𝘪𝘮 𝘬𝘦** `{done}` **Grup, 𝘛𝘢𝘱𝘪 𝘉𝘪𝘪 𝘨𝘢𝘨𝘢𝘭 𝘕𝘨𝘪𝘳𝘪𝘮 𝘬𝘦 ** `{er}` **Grup**"
     )
 
 
@@ -65,7 +65,7 @@ async def gucast(event):
     else:
         await event.edit("**Berikan Sebuah Pesan atau Reply**")
         return
-    kk = await event.edit("`Sedang Mengirim Pesan Secara Global... 📢`")
+    kk = await event.edit("`𝘉𝘦𝘯𝘵𝘢𝘳 𝘭𝘢𝘨𝘪 𝘯𝘺𝘰𝘣𝘢 𝘯𝘨𝘪𝘳𝘪𝘮 𝘯𝘪𝘩... 📢`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -77,7 +77,7 @@ async def gucast(event):
             except BaseException:
                 er += 1
     await kk.edit(
-        f"**Berhasil ya Gcast nya, tapi cuma ke ** `{done}` **chats, Gagal Gcast lu Ke ** `{er}` **chats**"
+        f"**𝘎𝘤𝘢𝘴𝘵 𝘭𝘶 𝘬𝘦 𝘬𝘪𝘳𝘪𝘮 𝘬𝘦** `{done}` **chats, Gagal Gcast lu Ke ** `{er}` **chats**"
     )
 
 
