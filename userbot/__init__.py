@@ -259,7 +259,7 @@ ALIVE_LOGO = os.environ.get(
 
 # Default .helpme Logo
 INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/b571da5fa8fcc7788708d.mp4"
+    "INLINE_PIC") or "https://telegra.ph/file/3c95a493e6d9d14d78e2c.jpg"
 
 # Default emoji help
 EMOJI_HELP = os.environ.get("EMOJI_HELP") or "⭐"
@@ -398,7 +398,7 @@ async def checking():
         pass
 
 with bot:
-    try:
+    try: 
         bot.loop.run_until_complete(checking())
     except BaseException:
         LOGS.info(
